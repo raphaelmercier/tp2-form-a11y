@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+@import url(normalize.css);
+@import url(utilitaires.css);
+@import url(typo.css);
+
+header, footer {
+    background-color: #3b341f;
+    margin: -1.5rem -2rem;
+    padding: 2rem 2rem;
+}
+
+@media (min-width:600px) {
+
+    header {
+        padding-left: 4rem;
+        padding-top: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 0rem;
+    }
+}
+
+
+body{
+    background-color: #a2cac4 ;
+}
+
+main{
+    max-width: 1000px;
+    margin: 1.5em auto;
+}
+
+aside{
+    text-align: center;
+    max-width: 1000px;
+    margin: 1.5em auto;
+}
+
+footer{
+    text-align: center;
+}
+
+.signature{
+    display: flex;
+}
+
+.signature__span{
+    font-size: 4rem;
+    text-decoration: none;
+    color: cornsilk;
+}
+
+.signature__span span:first-of-type{
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+#texte_footer{
+    max-width: 1000px;
+    margin: 1.5em auto;
+    color: white;
+}
+
+#texte_footer a{
+    color: rgb(110, 188, 255);
+}
+
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: auto;
+}
+
+.nav__list-item{
+    background-color: #6e5300;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav__link{
+    text-decoration: none;
+    
+}
+
+fieldset{
+    border-color: #3b341f;
+    border-left-color: white;
+    border-top-color: white;
+}
+
+
+fieldset fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/**/
+
+.prix {
+    display: block;
+}
+
+.forfait img {
+    width: 100%;
+}
+
+.forfait .row {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .forfait .row {
+        display: flex;
+    }
+}
+
+.forfait__li {
+    flex-basis: 33%;
+    margin: 0.25rem;
+}
+
+.forfait__li img {
+    filter: grayscale();
+}
+
+.forfait__li +label {
+    display: block;
+    padding: 1rem;
+}
+
+.forfait__li :checked+label {
+    font-weight: bold;
+}
+
+.forfait__li :checked+label img,
+.forfait__li :hover+label img {
+    filter: none;
+}
+
+.case-a-cocher p:first-of-type {
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem;
+    display: inline-block;
+
+}

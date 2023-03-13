@@ -16,7 +16,7 @@
         <a href="../index.html" class="signature">
             <span class="signature__span">Auberge </span>
             <span class="signature__span">du </span>
-            <img src="../images/logo-jacana.png" alt="" class="signature__logo">
+            <img src="../images/logo-jacana.png" alt="un jacana avec de bebe en dessous de ses ailes" class="signature__logo">
             <span class="signature__span">jacana </span>
             <span class="signature__span">africain</span>
         </a>
@@ -229,25 +229,22 @@
                     <legend>Choisir le type de chambre</legend>
                     <ul class="row">
                         <li class="forfait__li">
-                            <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only"
-                                required>
+                            <input type="radio" name="chambre" id="simple" value="simple" class="screen-reader-only" required>
                             <label for="simple">
-                                <img src="../images/types-de-chambre/1-lit-double.jpg" alt="">
+                                <img src="../images/types-de-chambre/1-lit-double.webp" alt="">
                                 <span class="produit">Simple <span class="prix">100$</span></span>
 
                             </label>
                         </li>
                         <li class="forfait__li">
-                            <input type="radio" name="chambre" id="double" value="double"
-                                class="screen-reader-only">
+                            <input type="radio" name="chambre" id="double" value="double" class="screen-reader-only">
                             <label for="double">
                                 <img src="../images/types-de-chambre/2-lits-double.jpg" alt="">
                                 <span class="produit">Double <span class="prix">150$</span></span>
                             </label>
                         </li>
                         <li class="forfait__li">
-                            <input type="radio" name="chambre" id="familiale" value="familiale"
-                                class="screen-reader-only">
+                            <input type="radio" name="chambre" id="familiale" value="familiale" class="screen-reader-only">
                             <label for="familiale">
                                 <img src="../images/types-de-chambre/chambre-familiale.jpg" alt="">
                                 <span class="produit">Familiale <span class="prix">200$</span></span>
@@ -282,7 +279,7 @@
                 <div class="ctnValidation prenom">
                     <p>
                         <label for="prenom">Prénom :</label>
-                        <input type="text" id="prenom" name="prenom" required pattern="[a-zA-ZÀ-ÿ '\-]+" title="Alphabétique incluant les accents" autocomplete="given-name">
+                        <input type="text" id="prenom" name="prenom" autocomplete="first-name" required pattern="[a-zA-ZÀ-ÿ '\-]+" title="Alphabétique incluant les accents" >
                     </p>
                     <p class="erreur">
                         <span>
@@ -295,7 +292,7 @@
 
                 <div class="ctnValidation nom">
                     <p><label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" required pattern="[a-zA-ZÀ-ÿ '\-]+" title="Alphabétique incluant les accents" autocomplete="family-name">
+                        <input type="text" id="nom" name="nom" autocomplete="family-name" required pattern="[a-zA-ZÀ-ÿ '\-]+" title="Alphabétique incluant les accents" >
                     </p>
                     <p class="erreur">
                         <span>
@@ -308,7 +305,7 @@
 
                 <div class="ctnValidation email">
                     <p><label for="email">Email :</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <input type="email" id="email" name="email" autocomplete="email" required >
                     </p>
                     <p class="erreur">
                         <span>
@@ -322,7 +319,7 @@
                 <div class="ctnValidation telephone">
                     <p>
                         <label for="telephone">Téléphone (111-222-3456):</label>
-                        <input type="tel" id="telephone" name="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 111-222-3456" autocomplete="tel" required>
+                        <input type="tel" id="telephone" name="telephone" autocomplete="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Format: 111-222-3456"  required>
                     </p>
                     <p class="erreur">
                         <span>
@@ -352,8 +349,7 @@
         </p>
     </aside>
     <footer>
-        <!-- Intégrer les medias sociaux instagram et facebook + un bouton pour partager cette page -->
-        <p>
+        <p id="texte_footer">
             Ce site Web est un projet pédagogique réalisé par
             <a href="">Raphael Mercier</a> et <a href="">Prénom et Nom</a> dans le cadre du cours 582-204-SF Intégration
             II,
